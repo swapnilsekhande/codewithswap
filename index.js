@@ -40,7 +40,7 @@ const User = mongoose.model("User", UserSchema);
 // })
 
 // CheUser.save().then(()=>console.log("UserSavedSuccessfully")).catch(err => console.log(err));
-app.use('/',(req,res) =>{
+app.get('/',(req,res) =>{
     res.send("hello");
 })
 app.post('/post-message',(req,res)=>{
