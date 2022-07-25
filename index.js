@@ -48,6 +48,10 @@ const Blog = mongoose.model("Blog", BlogSchema);
 //     message:"Testing"
 // })
 
+app.get('/',(req,res) => {
+    res.send("Hello")
+})
+
 // CheUser.save().then(()=>console.log("UserSavedSuccessfully")).catch(err => console.log(err));
 app.get('/',(req,res) => {
     res.send("Hello")
